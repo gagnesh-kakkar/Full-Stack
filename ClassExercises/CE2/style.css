@@ -1,0 +1,13 @@
+div {
+    background-color: cadetblue;
+    color: burlywood;
+    height: 100px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}

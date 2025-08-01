@@ -1,0 +1,16 @@
+div {
+    border: 1px solid black;
+    height: 40px;
+    width: 70px;
+    margin: 15px;
+    padding: 5px 2px 5px 2px;
+}
+
+#d3 {
+    position: sticky;
+    top: 0px;
+}
+body {
+    background-size: cover;
+    background-image: url(https://imgs.search.brave.com/rL-MvaYEDOtmTe7QWfE6Bqu1DMmC7klzETO909U69rs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMDQv/NDkzLzMxOS9zbWFs/bC93aGl0ZS1ncmF5/LWFuZC1ibGFjay1n/cmFkaWVudC1iYWNr/Z3JvdW5kLWZyZWUt/cGhvdG8uanBn);
+}
