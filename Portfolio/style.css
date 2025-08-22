@@ -8,13 +8,34 @@
     color:darkcyan;
     text-align: center;
 }
+
+#gagnesh-div {
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+}
+
+#gagnesh-div img {
+    padding: 5px 6px 2px 20px;
+}
+
+#gagnesh-div #h2 {
+    padding: 15px 5px 1px 0px;
+    margin-bottom: 0px;
+}
+
+#gagnesh-div #h5 {
+    margin: 0px;
+}
+
 a {
     text-decoration: none;
     color: black;
 }
+
 #urls a:hover{
-    color: #008b8b;
-    background-color: aliceblue;
+    color: black;
+    background-color: rgb(245, 244, 244);
     transition: 0.5s;
     border-radius: 5px;
     padding:5px 10px 5px 10px;
