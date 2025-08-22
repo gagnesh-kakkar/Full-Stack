@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 class="hello">Hello</h1>
+    <p class="para">Welcome</p>
+    <script>
+
+        let dom1 = document.getElementsByClassName('para');
+        console.log(dom1)
+        let dom2 = document.querySelector('h1');//querySelector is used for all methods collectively
+        console.log(dom2)
+
+        //to create a new HTML element and attach it to the DOM tree.
+        let section = document.createElement('section');
+        section.class = 'section1';
+        section.innerHTML = '<p> Welcome to DOM lecture. </p>'
+        document.body.appendChild(section);
+
+    </script>
+</body>
+</html>
