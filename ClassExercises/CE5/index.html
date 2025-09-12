@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="eventHandling()">Submit</button>
+    <p id="para"></p>
+    <a href="https://www.google.com">Link</a>
+
+    <script>
+        // function eventHandling(){
+        //     const p = document.querySelector("#para")
+        //     p.innerHTML = "Welcome to Webpage"
+        //     p.style.background = "burlywood";
+        // }
+        // function eventHandling(){
+        //     const p = document.querySelector("#para")
+        //     p.innerHTML = "Welcome to Webpage"
+        //     p.style.background = "green";
+        // }//this will override the previous function so to handle it...
+
+        function eventHandling(){
+            const p = document.querySelector("#para")
+            p.innerHTML = "Welcome to Webpage"
+            p.style.background = "burlywood";
+            let btn = document.querySelector("button")
+            btn.addEventListener("click", eventHandling())
+        }
+        
+
+        //To prevent Default Behaviour
+        let abc = document.querySelector("a")
+        abc.addEventListener("click", (e) => {
+            e.preventDefault();
+            console.log("link prevented")
+        })
+
+    </script>
+   
+</body>
+
+<body>
+    <h2>Form validator</h2>
+    <form action="" id="example">
+        <input type="text" placeholder="Enter you name" id="forminput">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        let input = document.querySelector("#forminput")
+        input.addEventListener("submit", (e)=>{
+            if(!input.value){
+                e.preventDefault();
+                alert("Input must not be empty")
+            }
+        })
+    </script>
+</body>
+</html>
