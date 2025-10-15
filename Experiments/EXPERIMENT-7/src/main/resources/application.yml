@@ -1,0 +1,19 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    url: jdbc:postgresql://${PG_HOST:localhost}:${PG_PORT:5432}/grievance_db
+    username: ${PG_USER:postgres}
+    password: ${PG_PASSWORD:postgres}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+security:
+  jwt:
+    secret: ${JWT_SECRET:dev-secret-change}
+    issuer: ${JWT_ISSUER:sg-portal}
+
+
