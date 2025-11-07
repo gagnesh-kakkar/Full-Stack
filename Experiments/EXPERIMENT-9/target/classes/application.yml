@@ -1,0 +1,27 @@
+server:
+  port: 8084
+
+spring:
+  datasource:
+    url: jdbc:postgresql://${PG_HOST:localhost}:${PG_PORT:5432}/report_db
+    username: ${PG_USER:postgres}
+    password: ${PG_PASSWORD:postgres}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  mail:
+    host: ${SMTP_HOST:localhost}
+    port: ${SMTP_PORT:1025}
+    username: ${SMTP_USERNAME:}
+    password: ${SMTP_PASSWORD:}
+
+security:
+  jwt:
+    secret: ${JWT_SECRET:dev-secret-change}
+    issuer: ${JWT_ISSUER:sg-portal}
+
+notify:
+  from: ${SMTP_FROM:noreply@sg-portal.local}
+
+
